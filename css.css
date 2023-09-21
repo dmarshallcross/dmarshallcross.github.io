@@ -1,0 +1,149 @@
+body {
+    background-color: white;
+    font-family: 'times new roman', serif;
+    margin: 0em 4em 1em 4em;
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Publications page */
+
+ol.reverse > li:before {
+    content: counter(reverse) '.';
+    display: block;
+    left: 0em;
+    position: absolute;
+    width: 3em;
+}
+
+ol.reverse li {
+    list-style-type: none;
+    line-height: 1.4em;
+    counter-increment: reverse -1;
+}
+
+/* Front page sub headings */
+
+#research h3 {
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    margin-left: 1em;
+    font-size: 1.1em;  
+}
+
+
+.details {
+    margin-left: 2em;
+}
+
+/* Teaching sub pages */
+
+table.materials {
+    border-collapse: collapse;
+}
+
+table.materials td {
+    padding: 0.1em 0.5em 0.3em 0.5em;
+    border-bottom: 1px #eee solid;
+}
+
+
+/* For teaching page */
+.rightcolumn {
+    float: left;
+    margin-right: 2em;
+    width: 50%;
+}
+
+.leftcolumn {
+    margin-top: 2.3em ;
+}
+
+/* id based selectors */
+
+#container {
+    position: relative;
+    min-height: 100%;
+}
+
+#footer {
+    clear: both;
+    padding-top: 2em;
+}
+
+#title {
+    font-family: verdana, helvetica, sans-serif;
+}
+
+#title > h1 {
+    margin-bottom: 0.2em;
+}
+
+#job {
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 1em;
+    margin-top: 0.1em;
+}
+
+#title a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    clear: both;
+    text-align: left;
+    margin-bottom: 4em;
+}
+
+#nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav li {
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid;
+}
+
+#nav li.first {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#nav li.last {
+    border-right: 0px;
+    padding-right: 0px;
+}
+
+#image {
+    float: right;
+    margin-left: 2em;
+}
+
+#contact {
+    text-align: center;
+    border-top: 1px #ccc solid;
+}
+
+#contact ul {
+    text-align: left;
+    list-style: none;
+    line-height: 1.4em;
+}
+
+#contact li {
+    float: left;
+    margin-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#smallprint {
+    font-size: 0.7em;
+}
